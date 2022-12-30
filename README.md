@@ -122,6 +122,12 @@ cat words | grep -E "^compute$|^smart$"
 cat words | grep -E "^.oot$"
 ```
 
+- Procurando em um arquivo as linhas que começam com um caracter 'r' ou 's' seguidos dos caracteres 'oot' e ignorando o case. <br>
+  Usando expressoes regulares.
+```sh
+cat words | grep -iE "^[rs]oot$"
+```
+
 ### head
 - Mostra as primeiras linhas de um arquivo.
 
