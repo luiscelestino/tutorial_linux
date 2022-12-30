@@ -180,7 +180,7 @@ tail -n 3 <arquivo>
 ### Esc
 - Alterna entre o modo texto e o modo linha de comando.
 
-### I(nsert)
+### i(nsert)
 - No modo texto, para inserir um texto.
 
 ### Sair sem salvar
@@ -189,8 +189,29 @@ tail -n 3 <arquivo>
 ### Sair e salvar
 - No modo linha de comando, usar ':x'.
 
-### R(eplace)
+### r(eplace)
 - No modo texto, para trocar apenas um caracter.
 
 ### Salvar arquivo com outro nome sem sair
 - No modo linha de comando, usar ':w arquivo2.txt'.
+
+### dd
+- No modo texto, para remover ou recortar uma linha.
+
+## 10dd
+- No modo texto, para remover ou recortar 10 linhas.
+
+### Salvar sem sair
+- No modo linha de comando, usar ':w'.
+
+### Ir para a linha 5
+- No modo linha de comando, usar ':5'.
+
+## gg
+- No modo texto, para ir para o inicio do arquivo.
+
+## G
+- No modo texto, para ir para o final do arquivo.
+
+# Para procurar string no arquivo
+- No modo linha de comando, usar ':/string'.
