@@ -15,14 +15,31 @@
 - Copiar arquivos.
 
 ### cut
-- Corta colunas de um texto. <br>
+- Corta coluna de um texto. <br>
   -d: delimitador
-
 ```sh
 cat logs | cut -d " " f1
 ```
 
-- Corta colunas de um texto. <br>
+- Corta uma lista de colunas de um texto. <br>
+```sh
+cat logs | cut -d " " f6,7,8,9
+```
+
+- Corta um range de colunas de um texto. <br>
+```sh
+cat logs | cut -d " " f6-9
+```
+
+- Corta a partir de uma coluna de um texto. <br>
+```sh
+cat logs | cut -d " " f6-
+```
+
+- Corta combiando conjuntos de ranges. <br>
+```sh
+cat logs | cut -d " " f1-3,6-
+```
 
 ### find
 - Procurando arquivos no sistema com a terminaçao .conf.
@@ -67,6 +84,36 @@ grep -ir HTTP *
   Exibe no formato \<arquivo>.
 ```sh
 grep -rl HTTP *
+```
+
+- Procurando em um arquivo as linhas que contém a string compute. <br>
+  Usando expressoes regulares.
+```sh
+cat words | grep -E "compute"
+```
+
+- Procurando em um arquivo as linhas que começam com a string compute. <br>
+  Usando expressoes regulares.
+```sh
+cat words | grep -E "^compute"
+```
+
+- Procurando em um arquivo as linhas que terminam com a string compute. <br>
+  Usando expressoes regulares.
+```sh
+cat words | grep -E "compute$"
+```
+
+- Procurando em um arquivo as linhas com exatamente a palavra compute. <br>
+  Usando expressoes regulares.
+```sh
+cat words | grep -E "^compute$"
+```
+
+- Procurando em um arquivo as linhas com a palavra compute ou a palavra smart. <br>
+  Usando expressoes regulares.
+```sh
+cat words | grep -E "^compute$|^smart$"
 ```
 
 ### head
