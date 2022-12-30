@@ -68,49 +68,49 @@ sudo find / -size +1G
 ```
 
 ### grep
-- Procurando recursivamente em todos os arquivos as linhas que contém a palavra HTTP. <br>
+- Procurando recursivamente em todos os arquivos as linhas que contém a palavra 'HTTP'. <br>
   Exibe no formato \<arquivo>:\<linha>.
 ```sh
 grep -r HTTP *
 ```
 
-- Procurando recursivamente em todos os arquivos as linhas que contém a palavra HTTP ignorando o case. <br>
+- Procurando recursivamente em todos os arquivos as linhas que contém a palavra 'HTTP' ignorando o case. <br>
   Exibe no formato \<arquivo>:\<linha>.
 ```sh
 grep -ir HTTP *
 ```
 
-- Procurando recursivamente em todos os arquivos as linhas que contém a palavra HTTP. <br>
+- Procurando recursivamente em todos os arquivos as linhas que contém a palavra 'HTTP'. <br>
   Exibe no formato \<arquivo>.
 ```sh
 grep -rl HTTP *
 ```
 
-- Procurando em um arquivo as linhas que contém a string compute. <br>
+- Procurando em um arquivo as linhas que contém a string 'compute'. <br>
   Usando expressoes regulares.
 ```sh
 cat words | grep -E "compute"
 ```
 
-- Procurando em um arquivo as linhas que começam com a string compute. <br>
+- Procurando em um arquivo as linhas que começam com a string 'compute'. <br>
   Usando expressoes regulares.
 ```sh
 cat words | grep -E "^compute"
 ```
 
-- Procurando em um arquivo as linhas que terminam com a string compute. <br>
+- Procurando em um arquivo as linhas que terminam com a string 'compute'. <br>
   Usando expressoes regulares.
 ```sh
 cat words | grep -E "compute$"
 ```
 
-- Procurando em um arquivo as linhas com exatamente a palavra compute. <br>
+- Procurando em um arquivo as linhas com exatamente a palavra 'compute'. <br>
   Usando expressoes regulares.
 ```sh
 cat words | grep -E "^compute$"
 ```
 
-- Procurando em um arquivo as linhas com a palavra compute ou a palavra smart. <br>
+- Procurando em um arquivo as linhas com a palavra 'compute' ou a palavra 'smart'. <br>
   Usando expressoes regulares.
 ```sh
 cat words | grep -E "^compute$|^smart$"
