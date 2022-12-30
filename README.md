@@ -128,6 +128,12 @@ cat words | grep -E "^.oot$"
 cat words | grep -iE "^[rs]oot$"
 ```
 
+- Procurando em um arquivo as linhas que começam com um range de 'r' a 's' seguidos dos caracteres 'oot' e ignorando o case. <br>
+  Usando expressoes regulares.
+```sh
+cat words | grep -iE "^[r-s]oot$"
+```
+
 ### head
 - Mostra as primeiras linhas de um arquivo.
 
@@ -168,3 +174,23 @@ tail -n 3 <arquivo>
 
 ### wc
 - Contagem de palavras, linhas, caracteres e bytes.
+
+## Vi
+
+### Esc
+- Alterna entre o modo texto e o modo linha de comando.
+
+### I(nsert)
+- No modo texto, para inserir um texto.
+
+### Sair sem salvar
+- No modo linha de comando, usar ':q!'.
+
+### Sair e salvar
+- No modo linha de comando, usar ':x'.
+
+### R(eplace)
+- No modo texto, para trocar apenas um caracter.
+
+### Salvar arquivo com outro nome sem sair
+- No modo linha de comando, usar ':w arquivo2.txt'.
