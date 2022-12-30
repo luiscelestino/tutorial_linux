@@ -41,7 +41,7 @@ grep -rl HTTP *
   Navegaçao com as setas. <br>
   q: sair
 ```sh
-less /<arquivo>
+less \<arquivo>
 ```
 
 ### more
@@ -51,7 +51,7 @@ less /<arquivo>
   b: pagina anterior <br>
   q: sair
 ```sh
-more /<arquivo>
+more \<arquivo>
 ```
 
 ### mv
@@ -60,5 +60,5 @@ more /<arquivo>
 ### tail
 - Exibir final de um arquivo enquanto esta sendo escrito.
 ```sh
-tail -f /<arquivo>
+tail -f \<arquivo>
 ```
