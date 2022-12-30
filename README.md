@@ -17,17 +17,20 @@
 ### cut
 - Corta colunas de um texto. <br>
   -d: delimitador
+
 ```sh
 cat logs | cut -d " " f1
 ```
 
+- Corta colunas de um texto. <br>
+
 ### find
--Procurando arquivos no sistema com a terminaçao .conf.
+- Procurando arquivos no sistema com a terminaçao .conf.
 ```sh
 sudo find / -name *.conf
 ```
 
--Procurando arquivos no sistema com a terminaçao .conf e indicando a profundidade maxima.
+- Procurando arquivos no sistema com a terminaçao .conf e indicando a profundidade maxima.
 ```sh
 sudo find / -maxdepth 2 -name *.conf
 ```
