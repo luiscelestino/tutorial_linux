@@ -2,6 +2,22 @@
 
 ## Comandos
 
+### awk
+- Para manipular textos baseados em padroes.
+```sh
+awk '/string_procurada/{acao}'
+```
+
+- Para imprimir linhas contendo uma string procurada.
+```sh
+curl -s "https://api.github.com/users/luiscelestino/repos" | awk '/ssh_url/{print}'
+```
+
+- Para imprimir a 2a coluna de linhas contendo uma string procurada.
+```sh
+curl -s "https://api.github.com/users/luiscelestino/repos" | awk '/ssh_url/{print $2}'
+```
+
 ### cat
 - Exibe conteudo de um arquivo.
 
@@ -13,6 +29,18 @@
 
 ### cp
 - Copiar arquivos.
+
+### curl
+- Para visualizar o codigo de uma url.
+```sh
+curl <url>
+```
+
+- Para visualizar o codigo de uma url de forma silenciada. <br>
+  Nao exibe dados sobre o tempo de download.
+```sh
+curl -s <url>
+```
 
 ### cut
 - Corta coluna de um texto. <br>
@@ -157,6 +185,19 @@ more <arquivo>
 
 ### mv
 - Mover arquivos.
+
+### sed
+- Para manipular textos.
+
+- Removendo aspas duplas do começo um texto.
+```sh
+curl -s "https://api.github.com/users/luiscelestino/repos" | awk '/ssh_url/{print $2}' | sed 's/^"//g'
+```
+
+- Removendo aspas duplas do começo um texto e aspas duplas com virgula do final de um texto.
+```sh
+curl -s "https://api.github.com/users/luiscelestino/repos" | awk '/ssh_url/{print $2}' | sed 's/^"//g' | sed 's/",$//g'
+```
 
 ### sort
 - Ordena um texto.
