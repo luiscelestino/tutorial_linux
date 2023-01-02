@@ -215,27 +215,3 @@ tail -n 3 <arquivo>
 
 ### wc
 - Contagem de palavras, linhas, caracteres e bytes.
-
-### p
-- No modo texto, para colar texto copiado depois da linha selecionada.
-
-### P
-- No modo texto, para colar texto copiado antes da linha selecionada.
-
-### u
-- No modo texto, para desfazer o ultimo comando.
-
-### yy
-- No modo texto, para copiar uma linha.
-
-### 5yy
-- No modo texto, para copiar 5 linhas.
-
-### Para substituir a primeira ocorrencia de uma string no arquivo
-- No modo linha de comando, usar ':s/antes/depois'.
-
-### Para substituir todas ocorrencias de uma string no arquivo na primeira linha encontrada
-- No modo linha de comando, usar ':s/antes/depois/g'.
-
-### Para substituir todas ocorrencias de uma string no arquivo todo
-- No modo linha de comando, usar ':%s/antes/depois/g'.
