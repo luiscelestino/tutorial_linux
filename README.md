@@ -69,6 +69,12 @@ cat logs | cut -d " " f6-
 cat logs | cut -d " " f1-3,6-
 ```
 
+### env
+- Lista variaveis de ambiente e seus valores correspondentes.
+```sh
+env
+```
+
 ### find
 - Procurando arquivos no sistema com a terminaçao .conf.
 ```sh
