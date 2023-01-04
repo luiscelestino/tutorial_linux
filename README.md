@@ -1,5 +1,33 @@
 # Tutorial linux
 
+## Informaçoes
+
+### Discos e partiçoes
+```sh
+ls -l /dev | grep sd
+```
+
+
+## Arquivos
+
+### /proc/cpuinfo
+- Informaçoes sobre a memoria.
+```sh
+less /proc/cpuinfo
+```
+
+### /proc/meminfo
+- Informaçoes sobre a memoria.
+```sh
+less /proc/meminfo
+```
+
+### /var/log/syslog
+- Arquivo de logs do sistema.
+```sh
+less /var/log/syslog
+```
+
 ## Comandos
 
 ### awk
@@ -69,6 +97,18 @@ cat logs | cut -d " " f6-
 cat logs | cut -d " " f1-3,6-
 ```
 
+### df
+- Lista discos, particoes e uso.
+```sh
+df -h
+```
+
+### dmesg
+- Lista logs do sistema.
+```sh
+sudo dmesg
+```
+
 ### env
 - Lista variaveis de ambiente e seus valores correspondentes.
 ```sh
@@ -99,6 +139,12 @@ sudo find / -size +100M
 - Procurando arquivos com mais de 1 GB.
 ```sh
 sudo find / -size +1G
+```
+
+### free
+- Exibe informaçoes sobre uso de memoria.
+```sh
+free
 ```
 
 ### grep
