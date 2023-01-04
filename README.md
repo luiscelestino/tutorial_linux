@@ -179,6 +179,12 @@ cat words | grep -iE "^[r-s]oot$"
 less <arquivo>
 ```
 
+### lshw
+- Exibe detalhes do hardware da maquina.
+```sh
+sudo lshw
+```
+
 ### more
 - Exibe arquivo paginado. <br>
   space: proxima pagina <br>
